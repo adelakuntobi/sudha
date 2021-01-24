@@ -200,6 +200,10 @@ main .main-container .header-h1 {
   main .main-container {
     padding: 4rem 2rem;
   }
+  main .main-container .header-div {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
 }
 
 @media (max-width: 640px) {
@@ -211,6 +215,7 @@ main .main-container .header-h1 {
 #overview .cards-div {
   display: flex;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
 #overview .item-card {
@@ -219,8 +224,9 @@ main .main-container .header-h1 {
   background-color: white;
   padding: 2rem 1.25rem;
   border-radius: 8px;
+  width: 350px;
   color: rgba(64, 64, 64, 0.7);
-  margin-right: 1.5rem;
+  margin: .5rem 1.5rem;
 }
 
 #overview .item-card p {
@@ -244,6 +250,25 @@ main .main-container .header-h1 {
 #overview .item-card h2 {
   font-weight: 400;
   color: #166CDD;
+}
+
+@media (max-width: 768px) {
+  #overview .cards-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #overview .item-card {
+    margin: .5rem;
+    padding: 1rem 1.25rem;
+    width: 358px;
+  }
+}
+
+@media (max-width: 640px) {
+  #overview .item-card {
+    margin: .5rem auto;
+    padding: 1rem 1.25rem;
+  }
 }
 
 #add-funds p {
@@ -306,6 +331,16 @@ main .main-container .header-h1 {
   margin: 12rem 0 0 auto;
 }
 
+@media (max-width: 640px) {
+  #add-funds .payment-div {
+    flex-direction: column;
+    align-items: unset;
+  }
+  #add-funds .payment-div button {
+    margin-bottom: .5rem;
+  }
+}
+
 #airtime {
   color: #404040;
 }
@@ -364,6 +399,10 @@ main .main-container .header-h1 {
   #airtime section.main-div {
     padding: 1.5rem;
   }
+  #airtime section.main-div .data-plan-div {
+    grid-auto-flow: row;
+    grid-gap: 0;
+  }
   #airtime section.main-div form {
     width: 100%;
   }
@@ -395,6 +434,10 @@ main .main-container .header-h1 {
 
 #contact #group {
   display: none;
+}
+
+#contact .table-res {
+  overflow-x: auto;
 }
 
 #contact table {
@@ -431,6 +474,7 @@ main .main-container .header-h1 {
   font-weight: 500;
   font-size: 18px;
   color: rgba(31, 31, 32, 0.6);
+  white-space: nowrap;
 }
 
 #contact table td:first-of-type {
@@ -446,6 +490,33 @@ main .main-container .header-h1 {
 #contact table i {
   cursor: pointer;
   padding: 0 1rem;
+}
+
+@media (max-width: 1200px) {
+  #contact table th {
+    padding: 1rem;
+  }
+  #contact table td {
+    padding: 1.25rem 1rem;
+  }
+  #contact .recharge-btn-div {
+    flex-direction: column;
+  }
+  #contact .recharge-btn-div div {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact .recharge-btn-div {
+    align-items: unset;
+  }
+  #contact .recharge-btn-div div {
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+    justify-content: unset;
+    align-items: unset;
+  }
 }
 
 .tab-btn {
@@ -571,6 +642,33 @@ main .main-container .header-h1 {
   margin-left: auto;
   margin-right: 0;
   display: block;
+}
+
+@media (max-width: 768px) {
+  #settings .upload-div {
+    flex-direction: column;
+    align-items: unset;
+    padding: 1rem;
+  }
+  #settings .upload-div .user-img {
+    width: 70px;
+    height: 70px;
+  }
+  #settings .upload-div h2 {
+    font-size: 1.35rem;
+    margin-bottom: .5rem;
+  }
+  #settings .upload-div > div {
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+  }
+  #settings form {
+    padding: 2rem 1rem;
+  }
+  #settings form .flex {
+    grid-auto-flow: row;
+    grid-gap: 0;
+  }
 }
 
 #history table {

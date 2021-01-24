@@ -44,6 +44,10 @@
       @media (max-width: 768px) {
         section.main-div {
           padding: 1.5rem;
+          .data-plan-div {
+            grid-auto-flow: row;
+            grid-gap: 0;
+          }
           form {
             width: 100%;
           }

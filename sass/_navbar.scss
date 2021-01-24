@@ -177,10 +177,8 @@
     nav {
       .mobile__hamburger {
         display: block;
-
       }
     }
-
     main {
       aside#side-nav {
         display: none;
@@ -196,20 +194,24 @@
   }
   
   @media (max-width: 768px) {
-    nav{
+    nav {
       padding: .5rem 1rem;
     }
     main {
       .main-container {
         padding: 4rem 2rem;
+        .header-div {
+          flex-direction: column;
+          align-items: flex-start !important;
+        }
       }
     }
   }
-
-  @media (max-width: 640px) { 
+  
+  @media (max-width: 640px) {
     main {
       .main-container {
         padding: 3rem 1rem;
       }
     }
-   }
+  }

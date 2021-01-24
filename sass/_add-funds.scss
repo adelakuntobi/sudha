@@ -51,4 +51,13 @@
     display: block;
     margin: 12rem 0 0 auto;
   }
+  @media (max-width: 640px) {
+    .payment-div{
+      flex-direction: column;
+      align-items: unset;
+      button{
+        margin-bottom: .5rem;
+      }
+    }
+  }
 }
