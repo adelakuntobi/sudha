@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="icon" href="./images/logo.png" />
+  <title>Sudha</title>
+</head>
+
+<body>
+  <!-- Logo Nav -->
+  <nav>
+    <img src="./images/logo.png" alt="sudha logo" />
+  </nav>
+  <main>
+    <!-- Side Nav -->
+    <aside id="side-nav">
+      <div class="user-details">
+        <img src="./images/user.jpg" alt="user" class="user-img" />
+        <h2>Hello, Morayo</h2>
+        <p>morayoadelakun@gmail.com</p>
+      </div>
+      <div class="list-items">
+        <a href="./index.html">
+          <i class="far fa-home-lg-alt"></i>
+          Dashboard
+        </a>
+        <a href="./addfunds.html">
+          <i class="fal fa-wallet"></i>
+          Add Funds
+        </a>
+        <a href="./contact.html" class="active-nav">
+          <i class="far fa-user"></i>
+          Contacts
+        </a>
+        <a href="./airtime.html">
+          <i class="fal fa-phone-alt"></i>
+          Airtime
+        </a>
+        <a href="./data.html">
+          <i class="fal fa-database"></i>
+          Data
+        </a>
+        <a href="./history.html">
+          <i class="fas fa-history"></i>
+          History
+        </a>
+        <a href="./notification.html">
+          <i class="far fa-bell"></i>
+          Notification
+        </a>
+        <a href="./settings.html">
+          <i class="fal fa-cog"></i>
+          Settings
+        </a>
+        <hr />
+        <a href="./login.html">
+          <i class="fal fa-sign-out"></i>
+          Logout
+        </a>
+      </div>
+      </ul>
+    </aside>
+    <!-- End of Side Nav -->
+    <section class="main-container" id="contact">
+      <!-- Container of every other code -->
+      <div class="header-div">
+        <h1 class="header-h1">Manage your Team</h1>
+        <button id="addBtn">Add Contact</button>
+      </div>
+      <ul class="tab-btn">
+        <li id="contactBtn" class="active-contact">Contact</li>
+        <li id="groupBtn">Group</li>
+      </ul>
+      <div>
+
+        <!--------------
+           Contact 
+          ---------------->
+        <div class="contact" id="contactDiv">
+          <div class="recharge-btn-div">
+            <div>
+              <button>Recharge selected</button>
+              <button>Upload Spreadsheet <i class="far fa-arrow-from-bottom"></i></button>
+            </div>
+            <button>Download sample spreadsheet <i class="fal fa-download"></i></button>
+          </div>
+          <div>
+            <h1 class="header-text header-h1">All Contacts</h1>
+            <table>
+              <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Network</th>
+                <th>Date Created</th>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Guy Hawkins</td>
+                <td>08178270172</td>
+                <td>Airtel</td>
+                <td>18-02</td>
+                <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+                <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Guy Hawkins</td>
+                <td>08178270172</td>
+                <td>Airtel</td>
+                <td>18-02</td>
+                <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+                <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Guy Hawkins</td>
+                <td>08178270172</td>
+                <td>Airtel</td>
+                <td>18-02</td>
+                <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+                <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Guy Hawkins</td>
+                <td>08178270172</td>
+                <td>Airtel</td>
+                <td>18-02</td>
+                <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+                <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Guy Hawkins</td>
+                <td>08178270172</td>
+                <td>Airtel</td>
+                <td>18-02</td>
+                <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+                <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!--------------
+           Group 
+          ---------------->
+        <div id="group">
+          <button>Create Group  <i class="far fa-users"></i></button>
+          <h1 class="header-text header-h1">My Groups</h1>
+          <table>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Phone Number</th>
+              <th>Network</th>
+              <th>Date Created</th>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Guy Hawkins</td>
+              <td>08178270172</td>
+              <td>Airtel</td>
+              <td>18-02</td>
+              <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+              <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Guy Hawkins</td>
+              <td>08178270172</td>
+              <td>Airtel</td>
+              <td>18-02</td>
+              <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+              <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Guy Hawkins</td>
+              <td>08178270172</td>
+              <td>Airtel</td>
+              <td>18-02</td>
+              <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+              <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Guy Hawkins</td>
+              <td>08178270172</td>
+              <td>Airtel</td>
+              <td>18-02</td>
+              <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+              <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Guy Hawkins</td>
+              <td>08178270172</td>
+              <td>Airtel</td>
+              <td>18-02</td>
+              <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+              <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
