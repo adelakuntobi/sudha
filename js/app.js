@@ -1,6 +1,6 @@
 const groupBtn = document.getElementById("groupBtn"),
   contactBtn = document.getElementById("contactBtn"),
-  contact = document.getElementById("contact"),
+  contact = document.getElementById("contactDiv"),
   group = document.getElementById("group"),
   addBtn = document.getElementById("addBtn");
 

@@ -1,5 +1,6 @@
 const hamburger = document.getElementById("hamburger"),
-  sideNav = document.getElementById("side-nav");
+  sideNav = document.getElementById("side-nav"),
+  body = document.getElementsByTagName("body")[0];
 
 // Navigatyion Button
 hamburger.addEventListener("click", function () {
@@ -10,3 +11,14 @@ hamburger.addEventListener("click", function () {
     sideNav.style.display = "block"
   }
 });
+// Initialize resize observer object 
+let resizeObserver = new ResizeObserver(() => {
+  if (window.innerWidth >= 1024) {
+    sideNav.style.display = "block"
+  }
+  else {
+    sideNav.style.display = "none"
+  }
+});
+
+resizeObserver.observe(body);

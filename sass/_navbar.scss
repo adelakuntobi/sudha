@@ -106,9 +106,9 @@
     max-width: 1440px;
     margin: auto;
     align-items: end;
+    position: relative;
     aside#side-nav {
-      @include flex-mixin(center,
-      column);
+      display: block;
       width: 22%;
       min-width: 270px;
       background-color: white;
@@ -187,6 +187,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 10;
       }
       .main-container {
         width: 100%;
@@ -195,9 +196,20 @@
   }
   
   @media (max-width: 768px) {
+    nav{
+      padding: .5rem 1rem;
+    }
+    main {
+      .main-container {
+        padding: 4rem 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 640px) { 
     main {
       .main-container {
         padding: 3rem 1rem;
       }
     }
-  }
+   }

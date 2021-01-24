@@ -9,7 +9,6 @@
   table {
     width: 100%;
     border-collapse: collapse;
- 
     th {
       text-transform: uppercase;
       font-family: 'Raleway', sans-serif;
@@ -44,15 +43,19 @@
   #airtime {
     td {
       padding: 1rem .5rem;
-      
       &:nth-of-type(2) {
         padding: 1rem 2.5rem;
         margin: 0 .5rem;
         @include success( rgba(58, 183, 96, 0.1), #3AB760);
-        &.fail{
+        &.fail {
           @include success( rgba(255, 0, 0, 0.1), #FF0000)
         }
       }
+    }
+  }
+  @media (max-width: 1024px) {
+    #airtime,#topup {
+      overflow-x: auto;
     }
   }
 }

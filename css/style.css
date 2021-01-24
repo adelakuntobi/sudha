@@ -98,13 +98,11 @@ main {
   max-width: 1440px;
   margin: auto;
   align-items: end;
+  position: relative;
 }
 
 main aside#side-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: block;
   width: 22%;
   min-width: 270px;
   background-color: white;
@@ -188,6 +186,7 @@ main .main-container .header-h1 {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
   }
   main .main-container {
     width: 100%;
@@ -195,6 +194,15 @@ main .main-container .header-h1 {
 }
 
 @media (max-width: 768px) {
+  nav {
+    padding: .5rem 1rem;
+  }
+  main .main-container {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 640px) {
   main .main-container {
     padding: 3rem 1rem;
   }
@@ -352,6 +360,15 @@ main .main-container .header-h1 {
   display: block;
 }
 
+@media (max-width: 768px) {
+  #airtime section.main-div {
+    padding: 1.5rem;
+  }
+  #airtime section.main-div form {
+    width: 100%;
+  }
+}
+
 #contact .recharge-btn-div {
   display: flex;
   justify-content: space-between;
@@ -434,7 +451,6 @@ main .main-container .header-h1 {
 .tab-btn {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 10rem;
   justify-content: flex-start;
   align-items: flex-start;
   margin: 2.5rem 0;
@@ -616,4 +632,10 @@ main .main-container .header-h1 {
   color: #FF0000;
   border-left: 5px solid #FF0000;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #history #airtime, #history #topup {
+    overflow-x: auto;
+  }
 }
