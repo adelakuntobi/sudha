@@ -538,7 +538,8 @@ main .main-container .header-h1 {
   display: inline-block;
   position: relative;
   line-height: 2.5;
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
+  margin: 0 .5rem;
 }
 
 .tab-btn li:hover, .tab-btn li.active-contact {
