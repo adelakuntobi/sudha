@@ -714,6 +714,10 @@ main .main-container .header-h1 {
   padding: 0 1rem;
 }
 
+#history #airtime {
+  display: none;
+}
+
 #history #airtime td {
   padding: 1rem .5rem;
 }
